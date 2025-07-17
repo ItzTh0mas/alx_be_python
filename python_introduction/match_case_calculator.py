@@ -5,13 +5,13 @@ oper = input("Choose the operation (+, -, *, /):")
 match oper:
     case "+":
         num3 = num1 +num2
-        print(str(num3))
+        print(f"The answer is{num3}")
     case "-":
         num3 = num1 - num2
-        print(str(num3))
+        print(f"The answer is {num3}")
     case "*":
         num3 = num1 * num2
-        print(str(num3))
+        print(f"The answer is {num3}")
     case "/":
         num3 = num1 / num2
-        print(str(num3))
+        print(f"The answer is {num3}")
