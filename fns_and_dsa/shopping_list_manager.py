@@ -14,26 +14,26 @@ while True:
     if choice == "1":
         item = input("Enter item to add: ").strip()
         shopping_list.append(item)
-        print(f"{item} added to list.")
+        print(f"{item} added.")
 
     elif choice == "2":
         item = input("Enter item to remove: ").strip()
         if item in shopping_list:
             shopping_list.remove(item)
-            print(f"{item} removed from list.")
+            print(f"{item} removed.")
         else:
-            print("Item not found in list.")
+            print("Item not found.")
 
     elif choice == "3":
         if not shopping_list:
             print("Shopping list is empty.")
         else:
-            print("\nYour Shopping List:")
+            print("\n Shopping List:")
             for i, item in enumerate(shopping_list, 1):
                 print(f"{i}. {item}")
 
     elif choice == "4":
-        print("Exiting. Goodbye!")
+        print("Exiting.")
         break
 
     else:
